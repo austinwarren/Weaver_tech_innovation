@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weaver Tech Innovation | Technology Woven Into Every Solution</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Three.js (optional, for future 3D integrations) -->
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="home" class="bg-black text-zinc-400 antialiased selection:bg-indigo-500/20 selection:text-indigo-200 overflow-x-hidden">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 border-b border-white/5 bg-black/50 backdrop-blur-xl">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-2 group cursor-pointer">
+        <div class="w-8 h-8 bg-zinc-900 rounded border border-zinc-800 flex items-center justify-center group-hover:border-zinc-600 transition-colors">
+          <span class="font-mono text-xs font-semibold text-white">&lt;/&gt;</span>
+        </div>
+        <a href="#home">
+            <button class="flex items-center justify-center gap-2 px-6 py-3 rounded text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 border border-transparent hover:border-white/10 transition-all">
+                <!-- <i data-lucide="terminal" class="w-4 h-4"></i> -->
+                <span class="text-white font-semibold tracking-tighter text-lg">Weaver_tech_innovation</span>
+            </button>
+        </a>
+      </div>
+
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#process" class="hover:text-white transition-colors">Process</a>
+        <a href="#work" class="hover:text-white transition-colors">Services</a>
+        <a href="#stack" class="hover:text-white transition-colors">Stack</a>
+        <a href="#about" class="hover:text-white transition-colors">About</a>
+      </div>
+      <a href="#contact">
+        <button class="bg-white text-black px-4 py-2 text-xs font-medium rounded hover:bg-zinc-200 transition-colors tracking-tight">
+            Start Project
+        </button>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden border-b border-white/5">
+    <div class="absolute inset-0 bg-grid mask-image-gradient pointer-events-none"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-indigo-500/20 blur-[120px] rounded-full pointer-events-none opacity-50"></div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+      <!-- Left: Content -->
+      <div class="max-w-2xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-xs font-medium mb-6">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
+          </span>
+          Available for Q4 Engagements
+        </div>
+        <h1 class="text-5xl lg:text-7xl font-medium tracking-tight text-white mb-6 leading-[1.1]">
+        <!-- Software that --> Technology Woven<br>
+          <span class="text-gradient">Into Every Solution.</span>
+        </h1>
+        <p class="text-lg text-zinc-400 mb-8 max-w-lg leading-relaxed">
+          We are a compact, highly-focused team of engineers specializing in high-performance web/mobile applications and design systems. We bring precision, clarity, and obsessive attention to detail to every project. <!-- We bridge the gap between complex backend logic and fluid frontend interaction. -->
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#work">
+            <button class="flex items-center justify-center gap-2 bg-white text-black px-6 py-3 rounded text-sm font-medium hover:bg-zinc-200 transition-all">
+                View Capabilities
+            </button>
+          </a>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+           <a href="#about">
+            <button class="flex items-center justify-center gap-2 px-6 py-3 rounded text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 border border-transparent hover:border-white/10 transition-all">
+                <i data-lucide="terminal" class="w-4 h-4"></i>
+                About us
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Interactive Code Demo -->
+      <div class="relative group">
+        <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-xl blur opacity-20 group-hover:opacity-30 transition duration-1000"></div>
+        <div class="relative bg-zinc-950 rounded-xl border border-zinc-800 shadow-2xl overflow-hidden">
+          <div class="flex items-center justify-between px-4 py-3 border-b border-white/5 bg-zinc-900/50">
+            <div class="flex gap-2">
+              <div class="w-3 h-3 rounded-full bg-red-500/20 border border-red-500/50"></div>
+              <div class="w-3 h-3 rounded-full bg-yellow-500/20 border border-yellow-500/50"></div>
+              <div class="w-3 h-3 rounded-full bg-green-500/20 border border-green-500/50"></div>
+            </div>
+            <div class="text-xs font-mono text-zinc-500">Weaver_tech_innovation.tsx</div>
+          </div>
+
+          <div class="p-6 font-mono text-xs md:text-sm leading-relaxed overflow-x-auto">
+            <div class="text-zinc-500 select-none mb-4">// Initializing secure environment</div>
+
+            <div class="flex">
+              <span class="w-6 text-zinc-700 select-none">1</span>
+              <span class="text-purple-400 pl-4">import</span>
+              <span class="text-white ml-2">{ <span class="text-yellow-200">Client</span> }</span>
+              <span class="text-purple-400 ml-2">from</span>
+              <span class="text-green-400 ml-2">'@Weaver/core'</span>;
+            </div>
+            <div class="flex">
+              <span class="w-6 text-zinc-700 select-none">2</span>
+            </div>
+            <div class="flex">
+              <span class="w-6 text-zinc-700 select-none">3</span>
+              <span class="text-purple-400 pl-4">export default</span>
+              <span class="text-blue-400 ml-2">async function</span>
+              <span class="text-yellow-200 ml-2">BuildFuture</span>() {
+            </div>
+            <div class="flex">
+              <span class="w-6 text-zinc-700 select-none">4</span>
+              <span class="text-purple-400 pl-8">const</span>
+              <span class="text-blue-300 ml-2">project</span>
+              <span class="text-zinc-400 ml-2">=</span>
+              <span class="text-purple-400 ml-2">await</span>
+              <span class="text-yellow-200 ml-2">deploy</span>({
+            </div>
+            <div class="flex bg-indigo-500/10 border-l-2 border-indigo-500">
+              <span class="w-6 text-zinc-700 select-none">5</span>
+              <span class="text-zinc-300 pl-12">performance:</span>
+              <span class="text-orange-400 ml-2">'maximum'</span>,
+            </div>
+            <div class="flex bg-indigo-500/10 border-l-2 border-indigo-500">
+              <span class="w-6 text-zinc-700 select-none">6</span>
+              <span class="text-zinc-300 pl-12">design:</span>
+              <span class="text-orange-400 ml-2">'pixel-perfect'</span>,
+            </div>
+            <div class="flex">
+              <span class="w-6 text-zinc-700 select-none">7</span>
+              <span class="text-zinc-300 pl-8">});</span>
+            </div>
+            <div class="flex">
+              <span class="w-6 text-zinc-700 select-none">8</span>
+              <span class="text-purple-400 pl-8">return</span>
+              <span class="text-blue-300 ml-2">project</span>;
+            </div>
+            <div class="flex">
+              <span class="w-6 text-zinc-700 select-none">9</span>
+              <span class="text-zinc-300 pl-4">}</span>
+            </div>
+
+            <!-- Simulated Terminal Output -->
+            <div class="mt-6 pt-4 border-t border-white/10">
+              <div class="flex items-center gap-2 text-green-400">
+                <i data-lucide="check-circle" class="w-3 h-3"></i>
+                <span>Build completed in 42ms</span>
+              </div>
+              <div class="flex items-center gap-2 text-zinc-500 mt-1">
+                <i data-lucide="activity" class="w-3 h-3"></i>
+                <span>Vitals optimized</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HORIZONTAL SCROLL SECTION (Process) -->
+  <section id="process" class="relative h-[400vh] bg-black">
+    <div class="sticky top-0 h-screen overflow-hidden flex flex-col justify-center">
+
+      <div class="absolute top-10 left-0 right-0 z-20">
+        <div class="max-w-7xl mx-auto px-6">
+          <h2 class="text-3xl md:text-4xl font-medium text-white tracking-tight">The Workflow</h2>
+          <p class="text-zinc-500 mt-2">Swipe to explore our engineering pipeline.</p>
+        </div>
+      </div>
+
+      <div class="relative w-full h-full flex items-center">
+        <!-- Horizontal Track -->
+        <div id="horizontal-track" class="flex gap-8 md:gap-16 w-max" style="padding-left: calc((100vw - 80rem) / 2 + 1.5rem);">
+
+          <!-- Step 1 -->
+          <div class="w-[85vw] md:w-[600px] h-[400px] bg-zinc-900/30 border border-white/10 rounded-2xl p-8 flex flex-col justify-between shrink-0 relative overflow-hidden group">
+            <div class="absolute top-0 right-0 p-32 bg-indigo-500/10 blur-[80px] rounded-full group-hover:bg-indigo-500/20 transition-all duration-700"></div>
+            <div class="text-6xl font-mono font-bold text-white/5 select-none absolute top-4 right-6">01</div>
+            <div class="relative z-10">
+              <div class="w-12 h-12 bg-zinc-800 rounded-lg flex items-center justify-center mb-6 text-white border border-white/5">
+                <i data-lucide="pen-tool" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-2xl font-medium text-white mb-4">Discovery &amp; Architecture</h3>
+              <p class="text-zinc-400 leading-relaxed">
+                We map your business logic to a scalable schema using PostgreSQL or MySQL.
+                We define API contracts using FastAPI before a single line of frontend code is written.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="w-[85vw] md:w-[600px] h-[400px] bg-zinc-900/30 border border-white/10 rounded-2xl p-8 flex flex-col justify-between shrink-0 relative overflow-hidden group">
+            <div class="absolute bottom-0 left-0 p-32 bg-purple-500/10 blur-[80px] rounded-full group-hover:bg-purple-500/20 transition-all duration-700"></div>
+            <div class="text-6xl font-mono font-bold text-white/5 select-none absolute top-4 right-6">02</div>
+            <div class="relative z-10">
+              <div class="w-12 h-12 bg-zinc-800 rounded-lg flex items-center justify-center mb-6 text-white border border-white/5">
+                <i data-lucide="layers" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-2xl font-medium text-white mb-4">Component Development</h3>
+              <p class="text-zinc-400 leading-relaxed">
+                Using React and Tailwind, we build an atomic design system. Every input, button,
+                and card is componentized for consistency across web and mobile.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="w-[85vw] md:w-[600px] h-[400px] bg-zinc-900/30 border border-white/10 rounded-2xl p-8 flex flex-col justify-between shrink-0 relative overflow-hidden group">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-32 bg-blue-500/10 blur-[80px] rounded-full group-hover:bg-blue-500/20 transition-all duration-700"></div>
+            <div class="text-6xl font-mono font-bold text-white/5 select-none absolute top-4 right-6">03</div>
+            <div class="relative z-10">
+              <div class="w-12 h-12 bg-zinc-800 rounded-lg flex items-center justify-center mb-6 text-white border border-white/5">
+                <i data-lucide="smartphone" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-2xl font-medium text-white mb-4">Native Compilation</h3>
+              <p class="text-zinc-400 leading-relaxed">
+                We leverage React Native and NativeWind to port the logic to iOS and Android,
+                ensuring 60fps performance and native gesture support.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="w-[85vw] md:w-[600px] h-[400px] bg-zinc-900/30 border border-white/10 rounded-2xl p-8 flex flex-col justify-between shrink-0 relative overflow-hidden group">
+            <div class="absolute top-0 left-0 p-32 bg-green-500/10 blur-[80px] rounded-full group-hover:bg-green-500/20 transition-all duration-700"></div>
+            <div class="text-6xl font-mono font-bold text-white/5 select-none absolute top-4 right-6">04</div>
+            <div class="relative z-10">
+              <div class="w-12 h-12 bg-zinc-800 rounded-lg flex items-center justify-center mb-6 text-white border border-white/5">
+                <i data-lucide="box" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-2xl font-medium text-white mb-4">3D &amp; Interaction</h3>
+              <p class="text-zinc-400 leading-relaxed">
+                For immersive experiences, we integrate Three.js directly into the DOM layer,
+                creating fluid product visualizations that run smoothly in the browser.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Fade overlay right -->
+        <div
+          class="absolute top-0 bottom-0 pointer-events-none z-10"
+          style="left: calc((100vw - 80rem) / 2 + 80rem + 1.5rem); right: 0; background: linear-gradient(to right, transparent, rgba(0, 0, 0, 1));">
+        </div>
+      </div>
+
+      <!-- Scroll Progress Bar -->
+      <div class="absolute bottom-12 left-0 right-0 z-20">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="w-48 h-1 bg-zinc-800 rounded-full overflow-hidden">
+            <div id="scroll-progress" class="h-full bg-white w-0"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE CAN DO GALLERY -->
+  <section id="work" class="py-32 bg-black border-t border-white/5 overflow-hidden relative">
+    <div class="absolute inset-0 bg-grid opacity-10 pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-6 mb-20 text-center relative z-10">
+      <h2 class="text-3xl md:text-4xl font-medium text-white tracking-tight mb-4">What We Can Do</h2>
+      <p class="text-zinc-500">Interactive capabilities that power modern digital experiences.</p>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
+
+      <!-- Card 1: Web Applications -->
+      <div class="group relative bg-zinc-900/50 border border-white/10 rounded-2xl overflow-hidden hover:border-indigo-500/30 transition-all duration-500 cursor-pointer backdrop-blur-sm">
+        <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+        <!-- Interactive Demo: Mini App Interface -->
+        <div class="h-48 bg-zinc-950/50 border-b border-white/5 p-4 relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-transparent to-transparent opacity-50"></div>
+          <div class="relative h-full flex flex-col gap-2">
+            <!-- Browser Bar -->
+            <div class="flex gap-1.5 mb-2">
+              <div class="w-3 h-3 rounded-full bg-red-500/30 border border-red-500/50"></div>
+              <div class="w-3 h-3 rounded-full bg-yellow-500/30 border border-yellow-500/50"></div>
+              <div class="w-3 h-3 rounded-full bg-green-500/30 border border-green-500/50"></div>
+            </div>
+            <!-- App Content -->
+            <div class="flex-1 bg-zinc-900/50 rounded border border-white/5 p-3 space-y-2">
+              <div class="h-2 bg-indigo-500/30 rounded w-3/4 animate-pulse-bar"></div>
+              <div class="h-2 bg-zinc-700/50 rounded w-full animate-slide-up" style="animation-delay: 0.1s;"></div>
+              <div class="h-2 bg-zinc-700/50 rounded w-5/6 animate-slide-up" style="animation-delay: 0.2s;"></div>
+              <div class="flex gap-2 mt-3">
+                <div class="h-6 bg-indigo-500/20 rounded flex-1 border border-indigo-500/30 group-hover:bg-indigo-500/30 transition-colors"></div>
+                <div class="h-6 bg-zinc-800 rounded w-12 border border-white/5"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 relative z-10">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-indigo-500/20 border border-indigo-500/30 rounded-lg flex items-center justify-center group-hover:bg-indigo-500/30 group-hover:border-indigo-500/50 transition-all">
+              <i data-lucide="globe" class="w-5 h-5 text-indigo-400"></i>
+            </div>
+            <h3 class="text-lg font-medium text-white">Web Applications</h3>
+          </div>
+          <p class="text-zinc-400 text-sm leading-relaxed">High-performance React apps with SSR, real-time updates, and seamless UX.</p>
+        </div>
+      </div>
+
+      <!-- Card 2: Mobile Apps -->
+      <div class="group relative bg-zinc-900/50 border border-white/10 rounded-2xl overflow-hidden hover:border-purple-500/30 transition-all duration-500 cursor-pointer backdrop-blur-sm">
+        <div class="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+        <!-- Interactive Demo: Mobile App Preview -->
+        <div class="h-48 bg-zinc-950/50 border-b border-white/5 p-4 relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-transparent to-transparent opacity-50"></div>
+          <div class="relative h-full flex items-center justify-center">
+            <div class="w-24 h-40 bg-zinc-900/80 rounded-2xl border-2 border-purple-500/30 p-2 shadow-2xl animate-float">
+              <div class="h-full bg-zinc-950 rounded-xl p-2 space-y-1.5">
+                <div class="h-1 bg-purple-500/40 rounded w-3/4 mx-auto"></div>
+                <div class="space-y-1">
+                  <div class="h-2 bg-purple-500/20 rounded animate-pulse-bar"></div>
+                  <div class="h-2 bg-zinc-800 rounded w-5/6"></div>
+                </div>
+                <div class="mt-2 space-y-1">
+                  <div class="h-8 bg-purple-500/20 rounded border border-purple-500/30 group-hover:bg-purple-500/30 transition-colors"></div>
+                  <div class="h-8 bg-zinc-800 rounded border border-white/5"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 relative z-10">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-purple-500/20 border border-purple-500/30 rounded-lg flex items-center justify-center group-hover:bg-purple-500/30 group-hover:border-purple-500/50 transition-all">
+              <i data-lucide="smartphone" class="w-5 h-5 text-purple-400"></i>
+            </div>
+            <h3 class="text-lg font-medium text-white">Native Mobile</h3>
+          </div>
+          <p class="text-zinc-400 text-sm leading-relaxed">Cross-platform iOS and Android apps with native performance and gestures.</p>
+        </div>
+      </div>
+
+      <!-- Card 3: 3D Experiences -->
+      <div class="group relative bg-zinc-900/50 border border-white/10 rounded-2xl overflow-hidden hover:border-blue-500/30 transition-all duration-500 cursor-pointer backdrop-blur-sm">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+        <!-- Interactive Demo: 3D Scene -->
+        <div class="h-48 bg-zinc-950/50 border-b border-white/5 p-4 relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-transparent opacity-50"></div>
+          <canvas id="demo-3d" class="w-full h-full opacity-80"></canvas>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-16 h-16 border-2 border-blue-500/40 rounded-lg transform rotate-12 group-hover:rotate-0 transition-transform duration-500">
+              <div class="w-full h-full bg-blue-500/10 rounded"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 relative z-10">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-blue-500/20 border border-blue-500/30 rounded-lg flex items-center justify-center group-hover:bg-blue-500/30 group-hover:border-blue-500/50 transition-all">
+              <i data-lucide="box" class="w-5 h-5 text-blue-400"></i>
+            </div>
+            <h3 class="text-lg font-medium text-white">3D Experiences</h3>
+          </div>
+          <p class="text-zinc-400 text-sm leading-relaxed">Immersive WebGL visualizations with Three.js for configurators and spatial interfaces.</p>
+        </div>
+      </div>
+
+      <!-- Card 4: Backend Systems -->
+      <div class="group relative bg-zinc-900/50 border border-white/10 rounded-2xl overflow-hidden hover:border-green-500/30 transition-all duration-500 cursor-pointer backdrop-blur-sm">
+        <div class="absolute inset-0 bg-gradient-to-br from-green-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+        <!-- Interactive Demo: Database Schema -->
+        <div class="h-48 bg-zinc-950/50 border-b border-white/5 p-4 relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-green-500/10 via-transparent to-transparent opacity-50"></div>
+          <div class="relative h-full flex items-center justify-center">
+            <div class="grid grid-cols-3 gap-2 w-full">
+              <div class="bg-green-500/10 border border-green-500/30 rounded p-2 space-y-1 group-hover:bg-green-500/15 group-hover:border-green-500/40 transition-all">
+                <div class="h-1.5 bg-green-500/40 rounded w-full animate-pulse-bar"></div>
+                <div class="h-1 bg-zinc-700 rounded w-3/4"></div>
+                <div class="h-1 bg-zinc-700 rounded w-2/3"></div>
+              </div>
+              <div class="bg-green-500/10 border border-green-500/30 rounded p-2 space-y-1 transform translate-y-2 group-hover:bg-green-500/15 group-hover:border-green-500/40 transition-all">
+                <div class="h-1.5 bg-green-500/40 rounded w-full animate-pulse-bar" style="animation-delay: 0.2s;"></div>
+                <div class="h-1 bg-zinc-700 rounded w-4/5"></div>
+              </div>
+              <div class="bg-green-500/10 border border-green-500/30 rounded p-2 space-y-1 group-hover:bg-green-500/15 group-hover:border-green-500/40 transition-all">
+                <div class="h-1.5 bg-green-500/40 rounded w-full animate-pulse-bar" style="animation-delay: 0.4s;"></div>
+                <div class="h-1 bg-zinc-700 rounded w-5/6"></div>
+                <div class="h-1 bg-zinc-700 rounded w-3/4"></div>
+              </div>
+            </div>
+            <!-- Connection Lines -->
+            <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-30">
+              <line x1="33%" y1="50%" x2="50%" y2="60%" stroke="rgb(34, 197, 94)" stroke-width="1"></line>
+              <line x1="66%" y1="50%" x2="50%" y2="60%" stroke="rgb(34, 197, 94)" stroke-width="1"></line>
+            </svg>
+          </div>
+        </div>
+
+        <div class="p-6 relative z-10">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-green-500/20 border border-green-500/30 rounded-lg flex items-center justify-center group-hover:bg-green-500/30 group-hover:border-green-500/50 transition-all">
+              <i data-lucide="server" class="w-5 h-5 text-green-400"></i>
+            </div>
+            <h3 class="text-lg font-medium text-white">Backend Systems</h3>
+          </div>
+          <p class="text-zinc-400 text-sm leading-relaxed">Scalable APIs with FastAPI, PostgreSQL sharding, and microservices architecture.</p>
+        </div>
+      </div>
+
+      <!-- Card 5: Design Systems -->
+      <div class="group relative bg-zinc-900/50 border border-white/10 rounded-2xl overflow-hidden hover:border-cyan-500/30 transition-all duration-500 cursor-pointer backdrop-blur-sm">
+        <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+        <!-- Interactive Demo: Component Library -->
+        <div class="h-48 bg-zinc-950/50 border-b border-white/5 p-4 relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-transparent to-transparent opacity-50"></div>
+          <div class="relative h-full flex items-center justify-center gap-3">
+            <div class="bg-cyan-500/10 border border-cyan-500/30 rounded-lg p-3 w-20 h-20 flex items-center justify-center group-hover:bg-cyan-500/15 group-hover:border-cyan-500/40 group-hover:scale-105 transition-all animate-float">
+              <div class="w-8 h-8 bg-cyan-500/30 rounded group-hover:bg-cyan-500/40 transition-colors"></div>
+            </div>
+            <div class="bg-cyan-500/10 border border-cyan-500/30 rounded-lg p-3 w-20 h-16 flex items-center justify-center group-hover:bg-cyan-500/15 group-hover:border-cyan-500/40 group-hover:scale-105 transition-all animate-float" style="animation-delay: 0.2s;">
+              <div class="w-full h-2 bg-cyan-500/40 rounded group-hover:bg-cyan-500/50 transition-colors"></div>
+            </div>
+            <div class="bg-cyan-500/10 border border-cyan-500/30 rounded-lg p-2 w-16 h-12 flex items-center justify-center group-hover:bg-cyan-500/15 group-hover:border-cyan-500/40 group-hover:scale-105 transition-all animate-float" style="animation-delay: 0.4s;">
+              <div class="w-6 h-6 border-2 border-cyan-500/40 rounded group-hover:border-cyan-500/60 transition-colors"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 relative z-10">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-cyan-500/20 border border-cyan-500/30 rounded-lg flex items-center justify-center group-hover:bg-cyan-500/30 group-hover:border-cyan-500/50 transition-all">
+              <i data-lucide="palette" class="w-5 h-5 text-cyan-400"></i>
+            </div>
+            <h3 class="text-lg font-medium text-white">Design Systems</h3>
+          </div>
+          <p class="text-zinc-400 text-sm leading-relaxed">Atomic component libraries with Tailwind CSS for consistency across platforms.</p>
+        </div>
+      </div>
+
+      <!-- Card 6: Performance Optimization -->
+      <div class="group relative bg-zinc-900/50 border border-white/10 rounded-2xl overflow-hidden hover:border-orange-500/30 transition-all duration-500 cursor-pointer backdrop-blur-sm">
+        <div class="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+        <!-- Interactive Demo: Performance Metrics -->
+        <div class="h-48 bg-zinc-950/50 border-b border-white/5 p-4 relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-transparent to-transparent opacity-50"></div>
+          <div class="relative h-full flex flex-col justify-end">
+            <div class="flex items-end gap-2 h-32">
+              <div class="flex-1 bg-orange-500/20 border border-orange-500/30 rounded-t group-hover:bg-orange-500/30 transition-all animate-slide-up" style="height: 40%; animation-delay: 0s;"></div>
+              <div class="flex-1 bg-orange-500/30 border border-orange-500/40 rounded-t group-hover:bg-orange-500/40 transition-all animate-slide-up" style="height: 60%; animation-delay: 0.1s;"></div>
+              <div class="flex-1 bg-orange-500/40 border border-orange-500/50 rounded-t group-hover:bg-orange-500/50 transition-all animate-slide-up" style="height: 80%; animation-delay: 0.2s;"></div>
+              <div class="flex-1 bg-orange-500/50 border border-orange-500/60 rounded-t group-hover:bg-orange-500/60 transition-all animate-slide-up" style="height: 100%; animation-delay: 0.3s;"></div>
+            </div>
+            <div class="mt-2 flex justify-between text-xs text-zinc-500 font-mono">
+              <span>0ms</span>
+              <span>100ms</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 relative z-10">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-orange-500/20 border border-orange-500/30 rounded-lg flex items-center justify-center group-hover:bg-orange-500/30 group-hover:border-orange-500/50 transition-all">
+              <i data-lucide="layout" class="w-5 h-5 text-orange-400"></i>
+            </div>
+            <h3 class="text-lg font-medium text-white">UI/UX Design</h3>
+          </div>
+          <p class="text-zinc-400 text-sm leading-relaxed">Pixel-perfect interfaces, intuitive flows, and interaction patterns engineered for frictionless user experiences.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Technical Stack Section -->
+  <section id="stack" class="py-24 bg-black border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+        <h2 class="text-2xl font-medium text-white tracking-tight">Technical Stack</h2>
+        <div class="text-sm text-zinc-500 text-right mt-4 md:mt-0">
+          Optimized for speed, scalability, and developer experience.
+        </div>
+      </div>
+
+      <!-- Carousel Container -->
+      <div class="overflow-hidden relative">
+        <div class="carousel-track flex gap-8 w-max">
+          <!-- First Set -->
+          <div class="group shrink-0 w-[calc(33.333vw-2rem)] md:w-[300px]">
+            <div class="h-16 w-16 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:border-blue-500/50 group-hover:text-blue-400 transition-all text-zinc-400">
+              <i data-lucide="atom" class="w-8 h-8"></i>
+            </div>
+            <h4 class="text-white font-medium text-base mb-2">React</h4>
+            <p class="text-sm text-zinc-500 leading-relaxed">Component-based architecture for web.</p>
+          </div>
+
+          <div class="group shrink-0 w-[calc(33.333vw-2rem)] md:w-[300px]">
+            <div class="h-16 w-16 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:border-blue-500/50 group-hover:text-blue-400 transition-all text-zinc-400">
+              <i data-lucide="smartphone" class="w-8 h-8"></i>
+            </div>
+            <h4 class="text-white font-medium text-base mb-2">React Native</h4>
+            <p class="text-sm text-zinc-500 leading-relaxed">Cross-platform native mobile apps.</p>
+          </div>
+
+          <div class="group shrink-0 w-[calc(33.333vw-2rem)] md:w-[300px]">
+            <div class="h-16 w-16 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:border-cyan-500/50 group-hover:text-cyan-400 transition-all text-zinc-400">
+              <i data-lucide="wind" class="w-8 h-8"></i>
+            </div>
+            <h4 class="text-white font-medium text-base mb-2">Tailwind CSS</h4>
+            <p class="text-sm text-zinc-500 leading-relaxed">Utility-first styling framework.</p>
+          </div>
+
+          <div class="group shrink-0 w-[calc(33.333vw-2rem)] md:w-[300px]">
+            <div class="h-16 w-16 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:border-cyan-500/50 group-hover:text-cyan-400 transition-all text-zinc-400">
+              <div class="relative">
+                <i data-lucide="smartphone" class="w-8 h-8"></i>
+                <div class="absolute -bottom-1 -right-1 bg-cyan-500/20 rounded-full p-0.5">
+                  <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                </div>
+              </div>
+            </div>
+            <h4 class="text-white font-medium text-base mb-2">NativeWind</h4>
+            <p class="text-sm text-zinc-500 leading-relaxed">Tailwind API for React Native.</p>
+          </div>
+
+          <div class="group shrink-0 w-[calc(33.333vw-2rem)] md:w-[300px]">
+            <div class="h-16 w-16 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:border-white group-hover:text-white transition-all text-zinc-400">
+              <i data-lucide="box" class="w-8 h-8"></i>
+            </div>
+            <h4 class="text-white font-medium text-base mb-2">Three.js</h4>
+            <p class="text-sm text-zinc-500 leading-relaxed">WebGL 3D graphics in browser.</p>
+          </div>
+
+          <div class="group shrink-0 w-[calc(33.333vw-2rem)] md:w-[300px]">
+            <div class="h-16 w-16 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:border-blue-700/50 group-hover:text-blue-600 transition-all text-zinc-400">
+              <i data-lucide="database" class="w-8 h-8"></i>
+            </div>
+            <h4 class="text-white font-medium text-base mb-2">PostgreSQL</h4>
+            <p class="text-sm text-zinc-500 leading-relaxed">Advanced open source relational DB.</p>
+          </div>
+
+          <div class="group shrink-0 w-[calc(33.333vw-2rem)] md:w-[300px]">
+            <div class="h-16 w-16 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:border-orange-500/50 group-hover:text-orange-400 transition-all text-zinc-400">
+              <i data-lucide="hard-drive" class="w-8 h-8"></i>
+            </div>
+            <h4 class="text-white font-medium text-base mb-2">MySQL</h4>
+            <p class="text-sm text-zinc-500 leading-relaxed">Reliable high-volume storage.</p>
+          </div>
+
+          <div class="group shrink-0 w-[calc(33.333vw-2rem)] md:w-[300px]">
+            <div class="h-16 w-16 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:border-green-500/50 group-hover:text-green-400 transition-all text-zinc-400">
+              <i data-lucide="zap" class="w-8 h-8"></i>
+            </div>
+            <h4 class="text-white font-medium text-base mb-2">FastAPI</h4>
+            <p class="text-sm text-zinc-500 leading-relaxed">High performance Python backend.</p>
+          </div>
+
+          <!-- Duplicate Set for Seamless Loop -->
+          <div class="group shrink-0 w-[calc(33.333vw-2rem)] md:w-[300px]">
+            <div class="h-16 w-16 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:border-blue-500/50 group-hover:text-blue-400 transition-all text-zinc-400">
+              <i data-lucide="atom" class="w-8 h-8"></i>
+            </div>
+            <h4 class="text-white font-medium text-base mb-2">React</h4>
+            <p class="text-sm text-zinc-500 leading-relaxed">Component-based architecture for web.</p>
+          </div>
+
+          <div class="group shrink-0 w-[calc(33.333vw-2rem)] md:w-[300px]">
+            <div class="h-16 w-16 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:border-blue-500/50 group-hover:text-blue-400 transition-all text-zinc-400">
+              <i data-lucide="smartphone" class="w-8 h-8"></i>
+            </div>
+            <h4 class="text-white font-medium text-base mb-2">React Native</h4>
+            <p class="text-sm text-zinc-500 leading-relaxed">Cross-platform native mobile apps.</p>
+          </div>
+
+          <div class="group shrink-0 w-[calc(33.333vw-2rem)] md:w-[300px]">
+            <div class="h-16 w-16 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:border-cyan-500/50 group-hover:text-cyan-400 transition-all text-zinc-400">
+              <i data-lucide="wind" class="w-8 h-8"></i>
+            </div>
+            <h4 class="text-white font-medium text-base mb-2">Tailwind CSS</h4>
+            <p class="text-sm text-zinc-500 leading-relaxed">Utility-first styling framework.</p>
+          </div>
+
+          <div class="group shrink-0 w-[calc(33.333vw-2rem)] md:w-[300px]">
+            <div class="h-16 w-16 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:border-cyan-500/50 group-hover:text-cyan-400 transition-all text-zinc-400">
+              <div class="relative">
+                <i data-lucide="smartphone" class="w-8 h-8"></i>
+                <div class="absolute -bottom-1 -right-1 bg-cyan-500/20 rounded-full p-0.5">
+                  <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                </div>
+              </div>
+            </div>
+            <h4 class="text-white font-medium text-base mb-2">NativeWind</h4>
+            <p class="text-sm text-zinc-500 leading-relaxed">Tailwind API for React Native.</p>
+          </div>
+
+          <div class="group shrink-0 w-[calc(33.333vw-2rem)] md:w-[300px]">
+            <div class="h-16 w-16 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:border-white group-hover:text-white transition-all text-zinc-400">
+              <i data-lucide="box" class="w-8 h-8"></i>
+            </div>
+            <h4 class="text-white font-medium text-base mb-2">Three.js</h4>
+            <p class="text-sm text-zinc-500 leading-relaxed">WebGL 3D graphics in browser.</p>
+          </div>
+
+          <div class="group shrink-0 w-[calc(33.333vw-2rem)] md:w-[300px]">
+            <div class="h-16 w-16 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:border-blue-700/50 group-hover:text-blue-600 transition-all text-zinc-400">
+              <i data-lucide="database" class="w-8 h-8"></i>
+            </div>
+            <h4 class="text-white font-medium text-base mb-2">PostgreSQL</h4>
+            <p class="text-sm text-zinc-500 leading-relaxed">Advanced open source relational DB.</p>
+          </div>
+
+          <div class="group shrink-0 w-[calc(33.333vw-2rem)] md:w-[300px]">
+            <div class="h-16 w-16 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:border-orange-500/50 group-hover:text-orange-400 transition-all text-zinc-400">
+              <i data-lucide="hard-drive" class="w-8 h-8"></i>
+            </div>
+            <h4 class="text-white font-medium text-base mb-2">MySQL</h4>
+            <p class="text-sm text-zinc-500 leading-relaxed">Reliable high-volume storage.</p>
+          </div>
+
+          <div class="group shrink-0 w-[calc(33.333vw-2rem)] md:w-[300px]">
+            <div class="h-16 w-16 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:border-green-500/50 group-hover:text-green-400 transition-all text-zinc-400">
+              <i data-lucide="zap" class="w-8 h-8"></i>
+            </div>
+            <h4 class="text-white font-medium text-base mb-2">FastAPI</h4>
+            <p class="text-sm text-zinc-500 leading-relaxed">High performance Python backend.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us Section -->
+  <section id="about" class="py-32 bg-black border-t border-white/5 relative overflow-hidden">
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-500/5 blur-[100px] rounded-full pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+
+        <!-- Left: Text Content -->
+        <div class="space-y-8">
+          <div>
+            <h2 class="text-4xl md:text-5xl font-medium text-white tracking-tight mb-3">Precision Engineering.</h2>
+            <h3 class="text-2xl md:text-3xl font-medium text-zinc-400 tracking-tight mb-6">No Compromises.</h3>
+          </div>
+
+          <p class="text-lg text-zinc-300 leading-relaxed max-w-lg">
+            Our methodology is rooted in the belief that software should be both beautiful and functional.
+            We don't just write code; we architect solutions that stand the test of time.
+          </p>
+
+          <div class="space-y-6 pt-4">
+            <!-- Feature 1 -->
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:border-indigo-500/50 transition-colors">
+                <i data-lucide="zap" class="w-6 h-6 text-indigo-400"></i>
+              </div>
+              <div>
+                <h4 class="text-white font-medium text-lg mb-1">Speed as a Feature</h4>
+                <p class="text-zinc-400 text-sm">Sub-100ms response times are our standard.</p>
+              </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:border-indigo-500/50 transition-colors">
+                <i data-lucide="shield" class="w-6 h-6 text-indigo-400"></i>
+              </div>
+              <div>
+                <h4 class="text-white font-medium text-lg mb-1">Enterprise Grade Security</h4>
+                <p class="text-zinc-400 text-sm">Data protection built into the architecture.</p>
+              </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:border-indigo-500/50 transition-colors">
+                <i data-lucide="refresh-cw" class="w-6 h-6 text-indigo-400"></i>
+              </div>
+              <div>
+                <h4 class="text-white font-medium text-lg mb-1">Transparent Iteration</h4>
+                <p class="text-zinc-400 text-sm">Weekly sprints and continuous deployment.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Metric Cards -->
+        <div class="grid grid-cols-2 gap-4">
+          <!-- Card 1: Lighthouse Score -->
+          <div class="bg-zinc-900/50 border border-white/10 rounded-xl p-8 flex flex-col items-center justify-center aspect-square relative overflow-hidden group hover:border-indigo-500/30 transition-all">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-indigo-500/5 blur-[40px] group-hover:bg-indigo-500/10 transition-all"></div>
+            <div class="relative z-10 text-center">
+              <div class="text-5xl font-bold text-white mb-2">98%</div>
+              <div class="text-xs text-zinc-400 font-mono uppercase tracking-wider">Lighthouse</div>
+            </div>
+          </div>
+
+          <!-- Card 2: Latency -->
+          <div class="bg-zinc-900/50 border border-white/10 rounded-xl p-8 flex flex-col items-center justify-center aspect-square relative overflow-hidden group hover:border-indigo-500/30 transition-all">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-indigo-500/5 blur-[40px] group-hover:bg-indigo-500/10 transition-all"></div>
+            <div class="relative z-10 text-center">
+              <div class="text-5xl font-bold text-white mb-2">0.1s</div>
+              <div class="text-xs text-zinc-400 font-mono uppercase tracking-wider">Latency</div>
+            </div>
+          </div>
+
+          <!-- Card 3: Growth Chart -->
+          <div class="bg-zinc-900/50 border border-white/10 rounded-xl p-8 flex flex-col items-center justify-center aspect-square relative overflow-hidden group hover:border-indigo-500/30 transition-all">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-indigo-500/5 blur-[40px] group-hover:bg-indigo-500/10 transition-all"></div>
+            <div class="relative z-10 text-center">
+              <div class="flex items-end justify-center gap-2 h-12 mb-2">
+                <div class="w-3 bg-indigo-400 rounded-t" style="height: 30%;"></div>
+                <div class="w-3 bg-indigo-400 rounded-t" style="height: 60%;"></div>
+                <div class="w-3 bg-indigo-400 rounded-t" style="height: 100%;"></div>
+              </div>
+              <div class="text-xs text-zinc-400 font-mono uppercase tracking-wider">Growth</div>
+            </div>
+          </div>
+
+          <!-- Empty space (4th card position) -->
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer CTA -->
+  <section id="contact" class="py-32 relative overflow-hidden bg-black">
+    <div class="absolute inset-0 bg-grid opacity-20 mask-image-gradient pointer-events-none"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-r from-indigo-500/10 to-purple-500/10 blur-[100px] rounded-full pointer-events-none"></div>
+
+    <div class="max-w-3xl mx-auto px-6 text-center relative z-10">
+      <h2 class="text-4xl md:text-5xl font-medium text-white tracking-tight mb-6">Ready to build the future?</h2>
+      <p class="text-lg text-zinc-400 mb-10">
+        We build with intention — only a few projects at a time. <br> Claim a spot in the next cycle.
+      </p>
+
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+        <a href="mailto:contact@WeaverTechInnovation.com"
+   class="button-shine w-full sm:w-auto px-8 py-4 bg-zinc-900 border border-zinc-800 text-white text-sm font-medium rounded hover:bg-zinc-800 transition-all">
+    contact@WeaverTechInnovation.com
+</a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5 bg-black py-12">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="flex items-center gap-2">
+        <span class="text-zinc-500 font-mono text-xs font-semibold">&lt;/&gt;</span>
+        <span class="text-zinc-500 font-semibold tracking-tighter text-sm">Weaver_tech_innovation</span>
+      </div>
+
+      <div class="text-xs text-zinc-600 font-mono">
+        © 2025 WeaverTechInnovation. All systems nominal.
+      </div>
+
+      <!-- Future links
+      <div class="flex gap-6">
+        <a href="#" class="text-zinc-500 hover:text-white transition-colors"><i data-lucide="github" class="w-4 h-4"></i></a>
+        <a href="#" class="text-zinc-500 hover:text-white transition-colors"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+        <a href="#" class="text-zinc-500 hover:text-white transition-colors"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+      </div>
+      -->
+    </div>
+  </footer>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
