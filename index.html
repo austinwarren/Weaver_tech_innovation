@@ -49,7 +49,7 @@
       <div class="hidden md:flex items-center gap-8 text-sm font-medium">
         <a href="#process" class="hover:text-white transition-colors">Process</a>
         <a href="#work" class="hover:text-white transition-colors">Services</a>
-        <a href="#stack" class="hover:text-white transition-colors">Stack</a>
+        <!-- <a href="#stack" class="hover:text-white transition-colors">Stack</a> -->
         <a href="#about" class="hover:text-white transition-colors">About</a>
       </div>
       <a href="#contact">
@@ -80,7 +80,8 @@
           <span class="text-gradient">Into Every Solution.</span>
         </h1>
         <p class="text-lg text-zinc-400 mb-8 max-w-lg leading-relaxed">
-          We are a compact, highly-focused team of engineers specializing in high-performance web/mobile applications and design systems. We bring precision, clarity, and obsessive attention to detail to every project. <!-- We bridge the gap between complex backend logic and fluid frontend interaction. -->
+          We are a compact, highly-focused team of engineers specializing in high-performance web/mobile applications. 
+          We bring precision, clarity, and obsessive attention to detail to every project. <!-- We bridge the gap between complex backend logic and fluid frontend interaction. -->
         </p>
         <div class="flex flex-col sm:flex-row gap-4">
           <a href="#work">
@@ -90,12 +91,6 @@
           </a>
             <i data-lucide="arrow-right" class="w-4 h-4"></i>
           </button>
-           <a href="#about">
-            <button class="flex items-center justify-center gap-2 px-6 py-3 rounded text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 border border-transparent hover:border-white/10 transition-all">
-                <i data-lucide="terminal" class="w-4 h-4"></i>
-                About us
-            </button>
-          </a>
         </div>
       </div>
 
@@ -181,13 +176,13 @@
   </header>
 
   <!-- HORIZONTAL SCROLL SECTION (Process) -->
-  <section id="process" class="relative h-[400vh] bg-black">
+  <section id="process" class="relative h-[300vh] bg-black">
     <div class="sticky top-0 h-screen overflow-hidden flex flex-col justify-center">
 
       <div class="absolute top-10 left-0 right-0 z-20">
         <div class="max-w-7xl mx-auto px-6">
           <h2 class="text-3xl md:text-4xl font-medium text-white tracking-tight">The Workflow</h2>
-          <p class="text-zinc-500 mt-2">Swipe to explore our engineering pipeline.</p>
+          <p class="text-zinc-500 mt-2">Scroll to explore our engineering pipeline.</p>
         </div>
       </div>
 
@@ -203,10 +198,11 @@
               <div class="w-12 h-12 bg-zinc-800 rounded-lg flex items-center justify-center mb-6 text-white border border-white/5">
                 <i data-lucide="pen-tool" class="w-6 h-6"></i>
               </div>
-              <h3 class="text-2xl font-medium text-white mb-4">Discovery &amp; Architecture</h3>
+              <h3 class="text-2xl font-medium text-white mb-4">UI/UX Design</h3>
               <p class="text-zinc-400 leading-relaxed">
-                We map your business logic to a scalable schema using PostgreSQL or MySQL.
-                We define API contracts using FastAPI before a single line of frontend code is written.
+                Crafting the experience before a single line of code is written.
+                This phase defines the visual language, 
+                component structure, and user flows—ensuring every screen feels intentional and intuitive before development begins.
               </p>
             </div>
           </div>
@@ -219,10 +215,10 @@
               <div class="w-12 h-12 bg-zinc-800 rounded-lg flex items-center justify-center mb-6 text-white border border-white/5">
                 <i data-lucide="layers" class="w-6 h-6"></i>
               </div>
-              <h3 class="text-2xl font-medium text-white mb-4">Component Development</h3>
+              <h3 class="text-2xl font-medium text-white mb-4">Technical Architecture</h3>
               <p class="text-zinc-400 leading-relaxed">
-                Using React and Tailwind, we build an atomic design system. Every input, button,
-                and card is componentized for consistency across web and mobile.
+                We design the infrastructure behind the experience—database schemas, logging
+                and the overall engineering blueprint. This step ensures the system is scalable, secure, and structured for efficient development.
               </p>
             </div>
           </div>
@@ -235,10 +231,10 @@
               <div class="w-12 h-12 bg-zinc-800 rounded-lg flex items-center justify-center mb-6 text-white border border-white/5">
                 <i data-lucide="smartphone" class="w-6 h-6"></i>
               </div>
-              <h3 class="text-2xl font-medium text-white mb-4">Native Compilation</h3>
+              <h3 class="text-2xl font-medium text-white mb-4">Development</h3>
               <p class="text-zinc-400 leading-relaxed">
-                We leverage React Native and NativeWind to port the logic to iOS and Android,
-                ensuring 60fps performance and native gesture support.
+                We implement the full system across frontend, backend, and integrations. Reusable components, 
+                responsive layouts, mobile optimizations, and backend logic are built in parallel to create a performant, production-ready application.
               </p>
             </div>
           </div>
@@ -251,14 +247,14 @@
               <div class="w-12 h-12 bg-zinc-800 rounded-lg flex items-center justify-center mb-6 text-white border border-white/5">
                 <i data-lucide="box" class="w-6 h-6"></i>
               </div>
-              <h3 class="text-2xl font-medium text-white mb-4">3D &amp; Interaction</h3>
+              <h3 class="text-2xl font-medium text-white mb-4">Testing & Deployment</h3>
               <p class="text-zinc-400 leading-relaxed">
-                For immersive experiences, we integrate Three.js directly into the DOM layer,
-                creating fluid product visualizations that run smoothly in the browser.
+                We run thorough QA across devices and breakpoints, perform usability checks, optimize performance, and prepare the build for launch. 
+                After testing phases, we deploy the system to production and ensure everything runs smoothly at scale.
               </p>
             </div>
           </div>
-
+          <div class="w-[300px] shrink-0"></div>
         </div>
 
         <!-- Fade overlay right -->
@@ -324,7 +320,7 @@
             </div>
             <h3 class="text-lg font-medium text-white">Web Applications</h3>
           </div>
-          <p class="text-zinc-400 text-sm leading-relaxed">High-performance React apps with SSR, real-time updates, and seamless UX.</p>
+          <p class="text-zinc-400 text-sm leading-relaxed">High-performance React apps with SEO, real-time updates, and seamless UX.</p>
         </div>
       </div>
 
@@ -357,7 +353,7 @@
             <div class="w-10 h-10 bg-purple-500/20 border border-purple-500/30 rounded-lg flex items-center justify-center group-hover:bg-purple-500/30 group-hover:border-purple-500/50 transition-all">
               <i data-lucide="smartphone" class="w-5 h-5 text-purple-400"></i>
             </div>
-            <h3 class="text-lg font-medium text-white">Native Mobile</h3>
+            <h3 class="text-lg font-medium text-white">Native Mobile Applications</h3>
           </div>
           <p class="text-zinc-400 text-sm leading-relaxed">Cross-platform iOS and Android apps with native performance and gestures.</p>
         </div>
@@ -385,7 +381,7 @@
             </div>
             <h3 class="text-lg font-medium text-white">3D Experiences</h3>
           </div>
-          <p class="text-zinc-400 text-sm leading-relaxed">Immersive WebGL visualizations with Three.js for configurators and spatial interfaces.</p>
+          <p class="text-zinc-400 text-sm leading-relaxed">Modern WebGL-based visuals that enhance UI with motion, depth, and interactivity.</p>
         </div>
       </div>
 
@@ -428,7 +424,7 @@
             </div>
             <h3 class="text-lg font-medium text-white">Backend Systems</h3>
           </div>
-          <p class="text-zinc-400 text-sm leading-relaxed">Scalable APIs with FastAPI, PostgreSQL sharding, and microservices architecture.</p>
+          <p class="text-zinc-400 text-sm leading-relaxed">Scalable APIs built with FastAPI, secure authentication, and efficient database architecture.</p>
         </div>
       </div>
 
@@ -457,46 +453,121 @@
             <div class="w-10 h-10 bg-cyan-500/20 border border-cyan-500/30 rounded-lg flex items-center justify-center group-hover:bg-cyan-500/30 group-hover:border-cyan-500/50 transition-all">
               <i data-lucide="palette" class="w-5 h-5 text-cyan-400"></i>
             </div>
-            <h3 class="text-lg font-medium text-white">Design Systems</h3>
+            <h3 class="text-lg font-medium text-white">UI/UX Design</h3>
           </div>
-          <p class="text-zinc-400 text-sm leading-relaxed">Atomic component libraries with Tailwind CSS for consistency across platforms.</p>
+          <p class="text-zinc-400 text-sm leading-relaxed">Pixel-perfect interfaces, intuitive flows, and 
+            interaction patterns engineered for frictionless user experiences.</p>
         </div>
       </div>
+      <!-- Card 6: Integrations & Automation (Yellow Theme) -->
+      <div class="group relative bg-zinc-900/50 border border-white/10 rounded-2xl overflow-hidden hover:border-yellow-500/30 transition-all duration-500 cursor-pointer backdrop-blur-sm">
 
-      <!-- Card 6: Performance Optimization -->
-      <div class="group relative bg-zinc-900/50 border border-white/10 rounded-2xl overflow-hidden hover:border-orange-500/30 transition-all duration-500 cursor-pointer backdrop-blur-sm">
-        <div class="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <!-- Hover Glow -->
+        <div class="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-        <!-- Interactive Demo: Performance Metrics -->
+        <!-- Interactive Demo: API Flow Lines -->
         <div class="h-48 bg-zinc-950/50 border-b border-white/5 p-4 relative overflow-hidden">
-          <div class="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-transparent to-transparent opacity-50"></div>
-          <div class="relative h-full flex flex-col justify-end">
-            <div class="flex items-end gap-2 h-32">
-              <div class="flex-1 bg-orange-500/20 border border-orange-500/30 rounded-t group-hover:bg-orange-500/30 transition-all animate-slide-up" style="height: 40%; animation-delay: 0s;"></div>
-              <div class="flex-1 bg-orange-500/30 border border-orange-500/40 rounded-t group-hover:bg-orange-500/40 transition-all animate-slide-up" style="height: 60%; animation-delay: 0.1s;"></div>
-              <div class="flex-1 bg-orange-500/40 border border-orange-500/50 rounded-t group-hover:bg-orange-500/50 transition-all animate-slide-up" style="height: 80%; animation-delay: 0.2s;"></div>
-              <div class="flex-1 bg-orange-500/50 border border-orange-500/60 rounded-t group-hover:bg-orange-500/60 transition-all animate-slide-up" style="height: 100%; animation-delay: 0.3s;"></div>
+            <div class="absolute inset-0 bg-gradient-to-br from-yellow-400/10 via-transparent to-transparent opacity-40"></div>
+
+            <div class="relative h-full flex items-center justify-center">
+            <!-- Animated lines representing integrations & data flow -->
+            <div class="flex gap-4">
+                <div class="w-2 h-20 bg-yellow-500/20 rounded-full group-hover:bg-yellow-500/40 transition-all animate-pulse"></div>
+                <div class="w-2 h-32 bg-yellow-500/30 rounded-full group-hover:bg-yellow-500/50 transition-all animate-pulse delay-150"></div>
+                <div class="w-2 h-16 bg-yellow-500/20 rounded-full group-hover:bg-yellow-500/40 transition-all animate-pulse delay-300"></div>
+                <div class="w-2 h-28 bg-yellow-500/25 rounded-full group-hover:bg-yellow-500/50 transition-all animate-pulse delay-500"></div>
             </div>
-            <div class="mt-2 flex justify-between text-xs text-zinc-500 font-mono">
-              <span>0ms</span>
-              <span>100ms</span>
             </div>
-          </div>
         </div>
 
         <div class="p-6 relative z-10">
-          <div class="flex items-center gap-3 mb-3">
-            <div class="w-10 h-10 bg-orange-500/20 border border-orange-500/30 rounded-lg flex items-center justify-center group-hover:bg-orange-500/30 group-hover:border-orange-500/50 transition-all">
-              <i data-lucide="layout" class="w-5 h-5 text-orange-400"></i>
+            <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-yellow-500/20 border border-yellow-500/30 rounded-lg flex items-center justify-center group-hover:bg-yellow-500/30 group-hover:border-yellow-500/50 transition-all">
+                <i data-lucide="workflow" class="w-5 h-5 text-yellow-400"></i>
             </div>
-            <h3 class="text-lg font-medium text-white">UI/UX Design</h3>
-          </div>
-          <p class="text-zinc-400 text-sm leading-relaxed">Pixel-perfect interfaces, intuitive flows, and interaction patterns engineered for frictionless user experiences.</p>
-        </div>
-      </div>
+            <h3 class="text-lg font-medium text-white">Integrations & Automation</h3>
+            </div>
 
+            <p class="text-zinc-400 text-sm leading-relaxed">
+            Seamless connections to APIs, auth providers, payment systems, and automation tools that power modern digital experiences.
+            </p>
+        </div>
+
+      </div>
     </div>
   </section>
+
+  <!-- Why Us Section -->
+  <section id="about" class="py-32 bg-black border-t border-white/5 relative overflow-hidden">
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-500/5 blur-[100px] rounded-full pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-16 lg:gap-24 items-start lg:items-center">
+        
+        <!-- Left: Headline + Paragraph -->
+        <div class="space-y-8">
+            <div>
+            <h2 class="text-4xl md:text-5xl font-medium text-white tracking-tight mb-4">
+                Precision Engineering.
+            </h2>
+            <h3 class="text-2xl md:text-3xl font-medium text-zinc-400 tracking-tight">
+                Built With Intention.
+            </h3>
+            </div>
+
+            <p class="text-lg text-zinc-300 leading-relaxed max-w-xl">
+            Our approach blends strong engineering fundamentals with thoughtful UI/UX execution.
+            Every feature is crafted for clarity, performance, and long-term maintainability.
+            We don’t cut corners — we build systems designed to evolve.
+            </p>
+        </div>
+
+        <!-- Right: Feature Blocks -->
+        <div class="space-y-5 lg:space-y-6">
+            <!-- Feature 1 -->
+            <div class="flex items-start gap-4 bg-zinc-900/40 border border-zinc-800 rounded-xl px-5 py-4">
+            <div class="w-10 h-10 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i data-lucide="zap" class="w-5 h-5 text-indigo-400"></i>
+            </div>
+            <div>
+                <h4 class="text-white font-medium text-base mb-1">Reliable Performance</h4>
+                <p class="text-zinc-400 text-sm">
+                Smooth, responsive experiences built on modern performance patterns.
+                </p>
+            </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="flex items-start gap-4 bg-zinc-900/40 border border-zinc-800 rounded-xl px-5 py-4">
+            <div class="w-10 h-10 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i data-lucide="shield" class="w-5 h-5 text-indigo-400"></i>
+            </div>
+            <div>
+                <h4 class="text-white font-medium text-base mb-1">Secure Foundations</h4>
+                <p class="text-zinc-400 text-sm">
+                Authentication, data handling, and API architecture built with industry best practices.
+                </p>
+            </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="flex items-start gap-4 bg-zinc-900/40 border border-zinc-800 rounded-xl px-5 py-4">
+            <div class="w-10 h-10 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i data-lucide="message-circle" class="w-5 h-5 text-indigo-400"></i>
+            </div>
+            <div>
+                <h4 class="text-white font-medium text-base mb-1">Transparent Collaboration</h4>
+                <p class="text-zinc-400 text-sm">
+                Weekly updates and clear communication at every step of the build.
+                </p>
+            </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+  </section>
+
 
   <!-- Technical Stack Section -->
   <section id="stack" class="py-24 bg-black border-t border-white/5">
@@ -655,101 +726,6 @@
     </div>
   </section>
 
-  <!-- Why Us Section -->
-  <section id="about" class="py-32 bg-black border-t border-white/5 relative overflow-hidden">
-    <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-500/5 blur-[100px] rounded-full pointer-events-none"></div>
-
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="grid md:grid-cols-2 gap-16 items-center">
-
-        <!-- Left: Text Content -->
-        <div class="space-y-8">
-          <div>
-            <h2 class="text-4xl md:text-5xl font-medium text-white tracking-tight mb-3">Precision Engineering.</h2>
-            <h3 class="text-2xl md:text-3xl font-medium text-zinc-400 tracking-tight mb-6">No Compromises.</h3>
-          </div>
-
-          <p class="text-lg text-zinc-300 leading-relaxed max-w-lg">
-            Our methodology is rooted in the belief that software should be both beautiful and functional.
-            We don't just write code; we architect solutions that stand the test of time.
-          </p>
-
-          <div class="space-y-6 pt-4">
-            <!-- Feature 1 -->
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:border-indigo-500/50 transition-colors">
-                <i data-lucide="zap" class="w-6 h-6 text-indigo-400"></i>
-              </div>
-              <div>
-                <h4 class="text-white font-medium text-lg mb-1">Speed as a Feature</h4>
-                <p class="text-zinc-400 text-sm">Sub-100ms response times are our standard.</p>
-              </div>
-            </div>
-
-            <!-- Feature 2 -->
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:border-indigo-500/50 transition-colors">
-                <i data-lucide="shield" class="w-6 h-6 text-indigo-400"></i>
-              </div>
-              <div>
-                <h4 class="text-white font-medium text-lg mb-1">Enterprise Grade Security</h4>
-                <p class="text-zinc-400 text-sm">Data protection built into the architecture.</p>
-              </div>
-            </div>
-
-            <!-- Feature 3 -->
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:border-indigo-500/50 transition-colors">
-                <i data-lucide="refresh-cw" class="w-6 h-6 text-indigo-400"></i>
-              </div>
-              <div>
-                <h4 class="text-white font-medium text-lg mb-1">Transparent Iteration</h4>
-                <p class="text-zinc-400 text-sm">Weekly sprints and continuous deployment.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right: Metric Cards -->
-        <div class="grid grid-cols-2 gap-4">
-          <!-- Card 1: Lighthouse Score -->
-          <div class="bg-zinc-900/50 border border-white/10 rounded-xl p-8 flex flex-col items-center justify-center aspect-square relative overflow-hidden group hover:border-indigo-500/30 transition-all">
-            <div class="absolute top-0 right-0 w-32 h-32 bg-indigo-500/5 blur-[40px] group-hover:bg-indigo-500/10 transition-all"></div>
-            <div class="relative z-10 text-center">
-              <div class="text-5xl font-bold text-white mb-2">98%</div>
-              <div class="text-xs text-zinc-400 font-mono uppercase tracking-wider">Lighthouse</div>
-            </div>
-          </div>
-
-          <!-- Card 2: Latency -->
-          <div class="bg-zinc-900/50 border border-white/10 rounded-xl p-8 flex flex-col items-center justify-center aspect-square relative overflow-hidden group hover:border-indigo-500/30 transition-all">
-            <div class="absolute top-0 right-0 w-32 h-32 bg-indigo-500/5 blur-[40px] group-hover:bg-indigo-500/10 transition-all"></div>
-            <div class="relative z-10 text-center">
-              <div class="text-5xl font-bold text-white mb-2">0.1s</div>
-              <div class="text-xs text-zinc-400 font-mono uppercase tracking-wider">Latency</div>
-            </div>
-          </div>
-
-          <!-- Card 3: Growth Chart -->
-          <div class="bg-zinc-900/50 border border-white/10 rounded-xl p-8 flex flex-col items-center justify-center aspect-square relative overflow-hidden group hover:border-indigo-500/30 transition-all">
-            <div class="absolute top-0 right-0 w-32 h-32 bg-indigo-500/5 blur-[40px] group-hover:bg-indigo-500/10 transition-all"></div>
-            <div class="relative z-10 text-center">
-              <div class="flex items-end justify-center gap-2 h-12 mb-2">
-                <div class="w-3 bg-indigo-400 rounded-t" style="height: 30%;"></div>
-                <div class="w-3 bg-indigo-400 rounded-t" style="height: 60%;"></div>
-                <div class="w-3 bg-indigo-400 rounded-t" style="height: 100%;"></div>
-              </div>
-              <div class="text-xs text-zinc-400 font-mono uppercase tracking-wider">Growth</div>
-            </div>
-          </div>
-
-          <!-- Empty space (4th card position) -->
-          <div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Footer CTA -->
   <section id="contact" class="py-32 relative overflow-hidden bg-black">
     <div class="absolute inset-0 bg-grid opacity-20 mask-image-gradient pointer-events-none"></div>
@@ -758,7 +734,7 @@
     <div class="max-w-3xl mx-auto px-6 text-center relative z-10">
       <h2 class="text-4xl md:text-5xl font-medium text-white tracking-tight mb-6">Ready to build the future?</h2>
       <p class="text-lg text-zinc-400 mb-10">
-        We build with intention — only a few projects at a time. <br> Claim a spot in the next cycle.
+        Claim a spot in the next cycle.
       </p>
 
       <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
