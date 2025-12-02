@@ -35,23 +35,20 @@
   <nav class="fixed top-0 w-full z-50 border-b border-white/5 bg-black/50 backdrop-blur-xl">
     <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
       <div class="flex items-center gap-2 group cursor-pointer">
-        <div class="w-8 h-8 bg-zinc-900 rounded border border-zinc-800 flex items-center justify-center group-hover:border-zinc-600 transition-colors">
-          <span class="font-mono text-xs font-semibold text-white">&lt;/&gt;</span>
-        </div>
         <a href="#home">
             <button class="flex items-center justify-center gap-2 px-6 py-3 rounded text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 border border-transparent hover:border-white/10 transition-all">
                 <!-- <i data-lucide="terminal" class="w-4 h-4"></i> -->
-                <span class="text-white font-semibold tracking-tighter text-lg">Weaver_tech_innovation</span>
+                <span class="text-white font-semibold tracking-tighter text-lg">Weaver Tech Innovation</span>
             </button>
         </a>
       </div>
 
-      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+      <div class="hidden md:flex items-center gap-24 text-sm font-medium absolute left-1/2 -translate-x-1/2">
         <a href="#process" class="hover:text-white transition-colors">Process</a>
         <a href="#work" class="hover:text-white transition-colors">Services</a>
-        <!-- <a href="#stack" class="hover:text-white transition-colors">Stack</a> -->
         <a href="#about" class="hover:text-white transition-colors">About</a>
       </div>
+
       <a href="#contact">
         <button class="bg-white text-black px-4 py-2 text-xs font-medium rounded hover:bg-zinc-200 transition-colors tracking-tight">
             Start Project
@@ -68,12 +65,13 @@
     <div class="max-w-7xl mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
       <!-- Left: Content -->
       <div class="max-w-2xl">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-xs font-medium mb-6">
+        <div class="inline-flex text-indigo-300 text-xs font-medium mb-6">         
+          <!--
           <span class="relative flex h-2 w-2">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
             <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
           </span>
-          Available for Q4 Engagements
+          Available for Q4 Engagements -->
         </div>
         <h1 class="text-5xl lg:text-7xl font-medium tracking-tight text-white mb-6 leading-[1.1]">
         <!-- Software that --> Technology Woven<br>
@@ -176,104 +174,197 @@
   </header>
 
   <!-- HORIZONTAL SCROLL SECTION (Process) -->
-  <section id="process" class="relative h-[300vh] bg-black">
-    <div class="sticky top-0 h-screen overflow-hidden flex flex-col justify-center">
+  <section id="process" class="bg-black border-t border-white/5">
+    <!-- Desktop: Horizontal Scroll -->
+    <div class="hidden lg:block relative h-[300vh]">
+      <div class="sticky top-0 h-screen overflow-hidden flex flex-col justify-center">
 
-      <div class="absolute top-10 left-0 right-0 z-20">
-        <div class="max-w-7xl mx-auto px-6">
-          <h2 class="text-3xl md:text-4xl font-medium text-white tracking-tight">The Workflow</h2>
-          <p class="text-zinc-500 mt-2">Scroll to explore our engineering pipeline.</p>
-        </div>
-      </div>
-
-      <div class="relative w-full h-full flex items-center">
-        <!-- Horizontal Track -->
-        <div id="horizontal-track" class="flex gap-8 md:gap-16 w-max" style="padding-left: calc((100vw - 80rem) / 2 + 1.5rem);">
-
-          <!-- Step 1 -->
-          <div class="w-[85vw] md:w-[600px] h-[400px] bg-zinc-900/30 border border-white/10 rounded-2xl p-8 flex flex-col justify-between shrink-0 relative overflow-hidden group">
-            <div class="absolute top-0 right-0 p-32 bg-indigo-500/10 blur-[80px] rounded-full group-hover:bg-indigo-500/20 transition-all duration-700"></div>
-            <div class="text-6xl font-mono font-bold text-white/5 select-none absolute top-4 right-6">01</div>
-            <div class="relative z-10">
-              <div class="w-12 h-12 bg-zinc-800 rounded-lg flex items-center justify-center mb-6 text-white border border-white/5">
-                <i data-lucide="pen-tool" class="w-6 h-6"></i>
-              </div>
-              <h3 class="text-2xl font-medium text-white mb-4">UI/UX Design</h3>
-              <p class="text-zinc-400 leading-relaxed">
-                Crafting the experience before a single line of code is written.
-                This phase defines the visual language, 
-                component structure, and user flows—ensuring every screen feels intentional and intuitive before development begins.
-              </p>
-            </div>
+        <div class="absolute top-10 left-0 right-0 z-20">
+          <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-medium text-white tracking-tight">The Workflow</h2>
+            <p class="text-zinc-500 mt-2">Scroll to explore our engineering pipeline.</p>
           </div>
-
-          <!-- Step 2 -->
-          <div class="w-[85vw] md:w-[600px] h-[400px] bg-zinc-900/30 border border-white/10 rounded-2xl p-8 flex flex-col justify-between shrink-0 relative overflow-hidden group">
-            <div class="absolute bottom-0 left-0 p-32 bg-purple-500/10 blur-[80px] rounded-full group-hover:bg-purple-500/20 transition-all duration-700"></div>
-            <div class="text-6xl font-mono font-bold text-white/5 select-none absolute top-4 right-6">02</div>
-            <div class="relative z-10">
-              <div class="w-12 h-12 bg-zinc-800 rounded-lg flex items-center justify-center mb-6 text-white border border-white/5">
-                <i data-lucide="layers" class="w-6 h-6"></i>
-              </div>
-              <h3 class="text-2xl font-medium text-white mb-4">Technical Architecture</h3>
-              <p class="text-zinc-400 leading-relaxed">
-                We design the infrastructure behind the experience—database schemas, logging
-                and the overall engineering blueprint. This step ensures the system is scalable, secure, and structured for efficient development.
-              </p>
-            </div>
-          </div>
-
-          <!-- Step 3 -->
-          <div class="w-[85vw] md:w-[600px] h-[400px] bg-zinc-900/30 border border-white/10 rounded-2xl p-8 flex flex-col justify-between shrink-0 relative overflow-hidden group">
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-32 bg-blue-500/10 blur-[80px] rounded-full group-hover:bg-blue-500/20 transition-all duration-700"></div>
-            <div class="text-6xl font-mono font-bold text-white/5 select-none absolute top-4 right-6">03</div>
-            <div class="relative z-10">
-              <div class="w-12 h-12 bg-zinc-800 rounded-lg flex items-center justify-center mb-6 text-white border border-white/5">
-                <i data-lucide="smartphone" class="w-6 h-6"></i>
-              </div>
-              <h3 class="text-2xl font-medium text-white mb-4">Development</h3>
-              <p class="text-zinc-400 leading-relaxed">
-                We implement the full system across frontend, backend, and integrations. Reusable components, 
-                responsive layouts, mobile optimizations, and backend logic are built in parallel to create a performant, production-ready application.
-              </p>
-            </div>
-          </div>
-
-          <!-- Step 4 -->
-          <div class="w-[85vw] md:w-[600px] h-[400px] bg-zinc-900/30 border border-white/10 rounded-2xl p-8 flex flex-col justify-between shrink-0 relative overflow-hidden group">
-            <div class="absolute top-0 left-0 p-32 bg-green-500/10 blur-[80px] rounded-full group-hover:bg-green-500/20 transition-all duration-700"></div>
-            <div class="text-6xl font-mono font-bold text-white/5 select-none absolute top-4 right-6">04</div>
-            <div class="relative z-10">
-              <div class="w-12 h-12 bg-zinc-800 rounded-lg flex items-center justify-center mb-6 text-white border border-white/5">
-                <i data-lucide="box" class="w-6 h-6"></i>
-              </div>
-              <h3 class="text-2xl font-medium text-white mb-4">Testing & Deployment</h3>
-              <p class="text-zinc-400 leading-relaxed">
-                We run thorough QA across devices and breakpoints, perform usability checks, optimize performance, and prepare the build for launch. 
-                After testing phases, we deploy the system to production and ensure everything runs smoothly at scale.
-              </p>
-            </div>
-          </div>
-          <div class="w-[300px] shrink-0"></div>
         </div>
 
-        <!-- Fade overlay right -->
-        <div
-          class="absolute top-0 bottom-0 pointer-events-none z-10"
-          style="left: calc((100vw - 80rem) / 2 + 80rem + 1.5rem); right: 0; background: linear-gradient(to right, transparent, rgba(0, 0, 0, 1));">
-        </div>
-      </div>
+        <div class="relative w-full h-full flex items-center">
+          <!-- Horizontal Track -->
+          <div id="horizontal-track"
+              class="flex gap-8 md:gap-16 w-max"
+              style="padding-left: calc((100vw - 80rem) / 2 + 1.5rem);">
 
-      <!-- Scroll Progress Bar -->
-      <div class="absolute bottom-12 left-0 right-0 z-20">
-        <div class="max-w-7xl mx-auto px-6">
-          <div class="w-48 h-1 bg-zinc-800 rounded-full overflow-hidden">
-            <div id="scroll-progress" class="h-full bg-white w-0"></div>
+            <!-- Step 1 -->
+            <div class="w-[85vw] md:w-[600px] h-[400px] bg-zinc-900/30 border border-white/10 rounded-2xl p-8 flex flex-col justify-between shrink-0 relative overflow-hidden group">
+              <div class="absolute top-0 right-0 p-32 bg-indigo-500/10 blur-[80px] rounded-full group-hover:bg-indigo-500/20 transition-all duration-700"></div>
+              <div class="text-6xl font-mono font-bold text-white/5 select-none absolute top-4 right-6">01</div>
+              <div class="relative z-10">
+                <div class="w-12 h-12 bg-zinc-800 rounded-lg flex items-center justify-center mb-6 text-white border border-white/5">
+                  <i data-lucide="pen-tool" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-2xl font-medium text-white mb-4">UI/UX Design</h3>
+                <p class="text-zinc-400 leading-relaxed">
+                  Crafting the experience before a single line of code is written.
+                  This phase defines the visual language, component structure, and user flows—ensuring every screen feels intentional and intuitive before development begins.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="w-[85vw] md:w-[600px] h-[400px] bg-zinc-900/30 border border-white/10 rounded-2xl p-8 flex flex-col justify-between shrink-0 relative overflow-hidden group">
+              <div class="absolute bottom-0 left-0 p-32 bg-purple-500/10 blur-[80px] rounded-full group-hover:bg-purple-500/20 transition-all duration-700"></div>
+              <div class="text-6xl font-mono font-bold text-white/5 select-none absolute top-4 right-6">02</div>
+              <div class="relative z-10">
+                <div class="w-12 h-12 bg-zinc-800 rounded-lg flex items-center justify-center mb-6 text-white border border-white/5">
+                  <i data-lucide="layers" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-2xl font-medium text-white mb-4">Technical Architecture</h3>
+                <p class="text-zinc-400 leading-relaxed">
+                  We design the infrastructure behind the experience—database schemas, logging,
+                  and the overall engineering blueprint. This step ensures the system is scalable, secure, and structured for efficient development.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="w-[85vw] md:w-[600px] h-[400px] bg-zinc-900/30 border border-white/10 rounded-2xl p-8 flex flex-col justify-between shrink-0 relative overflow-hidden group">
+              <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-32 bg-blue-500/10 blur-[80px] rounded-full group-hover:bg-blue-500/20 transition-all duration-700"></div>
+              <div class="text-6xl font-mono font-bold text-white/5 select-none absolute top-4 right-6">03</div>
+              <div class="relative z-10">
+                <div class="w-12 h-12 bg-zinc-800 rounded-lg flex items-center justify-center mb-6 text-white border border-white/5">
+                  <i data-lucide="smartphone" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-2xl font-medium text-white mb-4">Development</h3>
+                <p class="text-zinc-400 leading-relaxed">
+                  We implement the full system across frontend, backend, and integrations. Reusable components,
+                  responsive layouts, mobile optimizations, and backend logic are built in parallel to create a performant, production-ready application.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="w-[85vw] md:w-[600px] h-[400px] bg-zinc-900/30 border border-white/10 rounded-2xl p-8 flex flex-col justify-between shrink-0 relative overflow-hidden group">
+              <div class="absolute top-0 left-0 p-32 bg-green-500/10 blur-[80px] rounded-full group-hover:bg-green-500/20 transition-all duration-700"></div>
+              <div class="text-6xl font-mono font-bold text-white/5 select-none absolute top-4 right-6">04</div>
+              <div class="relative z-10">
+                <div class="w-12 h-12 bg-zinc-800 rounded-lg flex items-center justify-center mb-6 text-white border border-white/5">
+                  <i data-lucide="box" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-2xl font-medium text-white mb-4">Testing &amp; Deployment</h3>
+                <p class="text-zinc-400 leading-relaxed">
+                  We run thorough QA across devices and breakpoints, perform usability checks, optimize performance, and prepare the build for launch.
+                  After testing phases, we deploy the system to production and ensure everything runs smoothly at scale.
+                </p>
+              </div>
+            </div>
+
+            <!-- Extra spacer so last card fully shows -->
+            <div class="w-[300px] shrink-0"></div>
+          </div>
+
+          <!-- Fade overlay right -->
+          <div
+            class="absolute top-0 bottom-0 pointer-events-none z-10"
+            style="left: calc((100vw - 80rem) / 2 + 80rem + 1.5rem); right: 0; background: linear-gradient(to right, transparent, rgba(0,0,0,1));">
+          </div>
+        </div>
+
+        <!-- Scroll Progress Bar -->
+        <div class="absolute bottom-12 left-0 right-0 z-20">
+          <div class="max-w-7xl mx-auto px-6">
+            <div class="w-48 h-1 bg-zinc-800 rounded-full overflow-hidden">
+              <div id="scroll-progress" class="h-full bg-white w-0"></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Mobile: Simple Vertical Steps -->
+    <div class="lg:hidden py-20">
+      <div class="max-w-7xl mx-auto px-6 space-y-8">
+        <div class="text-center mb-4">
+          <h2 class="text-3xl font-medium text-white tracking-tight">The Workflow</h2>
+          <p class="text-zinc-500 mt-2">How we take your idea from sketch to launch.</p>
+        </div>
+
+        <!-- Step 1 -->
+        <div class="relative bg-zinc-900/50 border border-white/10 rounded-2xl overflow-hidden p-6 space-y-3">
+          <!-- ALWAYS ON GLOW -->
+          <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/10 to-transparent opacity-100 pointer-events-none"></div>
+
+          <div class="relative z-10">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 bg-zinc-800 rounded-lg flex items-center justify-center text-white border border-white/5">
+                <i data-lucide="pen-tool" class="w-5 h-5"></i>
+              </div>
+              <span class="text-xs font-mono text-zinc-500">01</span>
+            </div>
+            <h3 class="text-xl font-medium text-white mt-2">UI/UX Design</h3>
+            <p class="text-sm text-zinc-400 leading-relaxed">
+              We define the visual language, layouts, and user flows first so every screen feels intentional before development begins.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="relative bg-zinc-900/50 border border-white/10 rounded-2xl overflow-hidden p-6 space-y-3">
+          <div class="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-transparent opacity-100 pointer-events-none"></div>
+
+          <div class="relative z-10">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 bg-zinc-800 rounded-lg flex items-center justify-center text-white border border-white/5">
+                <i data-lucide="layers" class="w-5 h-5"></i>
+              </div>
+              <span class="text-xs font-mono text-zinc-500">02</span>
+            </div>
+            <h3 class="text-xl font-medium text-white mt-2">Technical Architecture</h3>
+            <p class="text-sm text-zinc-400 leading-relaxed">
+              Database schemas, logging, and backend structure are designed up front so the system is scalable and maintainable.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="relative bg-zinc-900/50 border border-white/10 rounded-2xl overflow-hidden p-6 space-y-3">
+          <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent opacity-100 pointer-events-none"></div>
+
+          <div class="relative z-10">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 bg-zinc-800 rounded-lg flex items-center justify-center text-white border border-white/5">
+                <i data-lucide="smartphone" class="w-5 h-5"></i>
+              </div>
+              <span class="text-xs font-mono text-zinc-500">03</span>
+            </div>
+            <h3 class="text-xl font-medium text-white mt-2">Development</h3>
+            <p class="text-sm text-zinc-400 leading-relaxed">
+              Frontend, backend, and integrations are implemented in parallel with reusable components and responsive layouts.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="relative bg-zinc-900/50 border border-white/10 rounded-2xl overflow-hidden p-6 space-y-3">
+          <div class="absolute inset-0 bg-gradient-to-br from-green-500/10 to-transparent opacity-100 pointer-events-none"></div>
+
+          <div class="relative z-10">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 bg-zinc-800 rounded-lg flex items-center justify-center text-white border border-white/5">
+                <i data-lucide="box" class="w-5 h-5"></i>
+              </div>
+              <span class="text-xs font-mono text-zinc-500">04</span>
+            </div>
+            <h3 class="text-xl font-medium text-white mt-2">Testing &amp; Deployment</h3>
+            <p class="text-sm text-zinc-400 leading-relaxed">
+              We test across devices, optimize performance, and handle production deployment so the launch is smooth.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
   </section>
+
 
   <!-- WHAT WE CAN DO GALLERY -->
   <section id="work" class="py-32 bg-black border-t border-white/5 overflow-hidden relative">
@@ -751,8 +842,7 @@
   <footer class="border-t border-white/5 bg-black py-12">
     <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
       <div class="flex items-center gap-2">
-        <span class="text-zinc-500 font-mono text-xs font-semibold">&lt;/&gt;</span>
-        <span class="text-zinc-500 font-semibold tracking-tighter text-sm">Weaver_tech_innovation</span>
+        <span class="text-zinc-500 font-semibold tracking-tighter text-sm">Weaver Tech Innovation</span>
       </div>
 
       <div class="text-xs text-zinc-600 font-mono">
